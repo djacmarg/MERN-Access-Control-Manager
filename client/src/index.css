@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-dark: #1976D2;
+  --primary-light: #03A9F4;
+  --primary-hover: #1976D2;
+  }
+
+.icon {
+  color: var(--primary-dark);
+}
+
+@layer base {
+  body {
+    @apply font-[Poppins]
+  }
+
+  li {
+    @apply p-4
+  }
+
+  h1 {
+    @apply text-4xl md:text-4xl font-bold
+  }
+
+  h2 {
+    @apply text-3xl font-bold py-2
+  }
+
+  h3 {
+    @apply text-xl font-bold
+  }
+
+  h4{
+    @apply text-2xl font-bold 
+  }
+
+  h6{
+    @apply text-xl   font-normal py-2
+  }
+
+  button {
+    @apply py-3 px-6 border bg-gradient-to-t from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-3xl
+  }
+  button:hover {
+    @apply py-3 border bg-gradient-to-b from-[var(--primary-dark)] to-[var(--primary-light)] text-white 
+  }
+
+  .customBG{
+    @apply bg-gradient-to-t from-[var(--primary-dark)] to-[var(--primary-light)]
+  }
+  .darkBG{
+    @apply bg-gradient-to-t from-[var(--primary-dark)] to-[var(--primary-dark)]
+  }
+  .inputStyle-1{
+    @apply p-3 m-3 border-2 rounded-md text-black sm:grid w-[45%] lg:w-[44%] valid:border-gray-300
+  }
+  .inputStyle-2{
+    @apply p-3 m-3 border-2 rounded-md text-black sm:grid w-[92.5%] valid:border-gray-300
+  }
+.gradient-text-1{
+  @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)]
+}
+  .icon {
+    @apply text-2xl cursor-pointer
+  }
+
+  .lightBtn{
+    @apply bg-gradient-to-t from-[var(--primary-light)] to-[var(--primary-light)]
+  }
+}
