@@ -13,7 +13,8 @@ CORS for cross Origin Resource Service Access
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-
+/* Any available port Number of choice can be used, at least i prefer any number 
+except for port 3000 which is the default port number for react app to avoid unneccessary conflict */
 const port = process.env.PORT || 3500;
 const app = express();
 
